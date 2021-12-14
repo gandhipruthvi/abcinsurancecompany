@@ -6,12 +6,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Login</display-name>
-    <servlet-name>Login</servlet-name>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
     <servlet-class>controller.Login</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Login</servlet-name>
-    <url-pattern>/Login</url-pattern>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>
