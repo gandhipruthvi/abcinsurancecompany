@@ -43,14 +43,14 @@ public class UserAddClaim extends HttpServlet {
 				rd = request.getRequestDispatcher("./view/user/addClaimPage.jsp");
 				rd.forward(request, response);
 			}else {
-				response.sendRedirect(request.getContextPath() + "/index.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 			}
 			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			response.sendRedirect(request.getContextPath() + "/index.jsp");
+			response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 		}
 		
 		
@@ -117,6 +117,7 @@ public class UserAddClaim extends HttpServlet {
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 			}
 		
 	}

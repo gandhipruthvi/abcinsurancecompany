@@ -49,7 +49,7 @@ public class UserViewClaims extends HttpServlet {
 			
 			rd.forward(request, response);
 		}else {
-			response.sendRedirect(request.getContextPath() + "/index.jsp");
+			response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 		}
 		
 	}
@@ -85,11 +85,14 @@ public class UserViewClaims extends HttpServlet {
 			} catch (NumberFormatException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 				e.printStackTrace();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 				e.printStackTrace();
 			}
 			

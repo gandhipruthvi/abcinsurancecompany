@@ -68,3 +68,21 @@ tbody tr:nth-child(even){background-color: #ff33cc36;}
 .viewClaims a{
 	color: #2196f3
 }
+
+.hholder{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+	font-size: 30px;
+    font-weight: bold;
+    color: #9c27b0;
+}
+
+.logout{
+	font-size: 14px;
+    color: #03a9f4;
+    font-weight: bold;
+    cursor: pointer;
+}

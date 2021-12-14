@@ -79,6 +79,7 @@ public class UserAddProduct extends HttpServlet {
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				response.sendRedirect(request.getContextPath() + "/view/index.jsp");
 			}
 		}else {
 			response.sendRedirect(request.getContextPath() + "/view/error.jsp");

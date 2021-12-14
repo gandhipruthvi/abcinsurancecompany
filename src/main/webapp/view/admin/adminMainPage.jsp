@@ -18,6 +18,7 @@
 String report = (String) request.getAttribute("report");
 %>
 <body>
+<div class="hholder"><span class="heading">ABC Company</span> <a href="DeleteCookies" class="logout">Logout</a></div>
 	<h2><%=report%></h2>
 	<h3><a href="./Admin_User">Users</a> <a href="./Admin_Product">Products</a> <a href="./Admin_Claims">Claims</a></h3>
 </body>
