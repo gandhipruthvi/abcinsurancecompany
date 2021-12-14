@@ -5,7 +5,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="./styles/registerProduct.css" rel="stylesheet" type="text/css">
+<style>
+	<%@ include file="../../styles/registerProduct.css"%>
+</style>
 </head>
 <%
 	String regProd = (String) request.getAttribute("regProd");

@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="./styles/userPurchase.css" rel="stylesheet" type="text/css">
+<style>
+	<%@ include file="../../styles/userPurchase.css"%>
+</style>
 <title>Register products</title>
 </head>
 <%

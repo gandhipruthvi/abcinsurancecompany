@@ -5,7 +5,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Register Page</title>
-<link href="../styles/signup.css" rel="stylesheet" type="text/css">
+<style>
+	<%@ include file="../styles/signup.css"%>
+</style>
 </head>
 <body>
 	<h1 class="header">Login Page</h1>

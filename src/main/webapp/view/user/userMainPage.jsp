@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="./styles/usermain.css" rel="stylesheet" type="text/css">
+<style>
+	<%@ include file="../../styles/usermain.css"%>
+</style>
 <title>User Main Page</title>
 </head>
 <%

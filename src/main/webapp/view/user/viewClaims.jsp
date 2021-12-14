@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="./styles/userclaims.css" rel="stylesheet" type="text/css">
+<style>
+	<%@ include file="../../styles/userclaims.css"%>
+</style>
 <meta charset="ISO-8859-1">
 <title>User Claims</title>
 </head>
