@@ -132,7 +132,7 @@ public class AdminQuery {
 	public String getSearchedProducts(String search) throws SQLException {
 		String query = "Select * from product where name like ?";
 		PreparedStatement ps = connection.prepareStatement(query);
-		ps.setString(1, search);
+		ps.setString(1, search+"%");
 		results = ps.executeQuery();
 		String table = "";
 		table += "<table border=1><tr><th>Name</th><th>Model</th><th>Year Manufactured</th></tr>";
@@ -159,7 +159,7 @@ public class AdminQuery {
 	public String getSearchedUses(String search) throws SQLException {
 		String query = "Select * from login where role!='admin' and username like ?";
 		PreparedStatement ps = connection.prepareStatement(query);
-		ps.setString(1, search);
+		ps.setString(1, search+"%");
 		results = ps.executeQuery();
 
 		String table = "";
@@ -200,7 +200,7 @@ public class AdminQuery {
 	public String getRegisteredProducts(String username) throws SQLException {
 		String query = "Select p.name, p.model, p.yearManufactured, r.username, r.serialNo, r.purchaseDate from productpurchase r, product p where p.id = r.productId and r.username like ?";
 		PreparedStatement ps = connection.prepareStatement(query);
-		ps.setString(1, username);
+		ps.setString(1, username+"%");
 		results = ps.executeQuery();
 		String table = "";
 		table += "<table border=1><tr><th>Product Name</th><th>Product Model</th><th>Year Manufactured</th><th>Username</th><th>Serial Number</th><th>Purchase Date</th></tr>";
